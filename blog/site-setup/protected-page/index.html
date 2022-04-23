@@ -5,10 +5,6 @@
 
 
 
-    
-        
-    
-
 
 
 
@@ -20,6 +16,8 @@
 
 
 
+
+    
 
 
 
@@ -31,25 +29,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features.">
+        <meta name="description" content="To make a page private, we can hide the content to general readers. The content is encrypted, and needs a password to show the original content. This feature is useful but still not totally secured. This post demonstrates how the feature works, its limitations and a soluton for that. Use <code>secret_password</code> to unlock this page.">
       
       
         <meta name="author" content="gypsei (gypsei@gmail.com)">
       
       
-        <link rel="canonical" href="https://gypsei.github.io/blog/site-setup/">
+        <link rel="canonical" href="https://gypsei.github.io/blog/site-setup/protected-page/">
       
-      <link rel="icon" href="../../favicon.png">
+      <link rel="icon" href="../../../favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
     
     
-    <title>How to set up your site - Ablog Spell</title>
+    <title>A Password-proteted private page! - Ablog Spell</title>
 
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.120efc48.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9647289d.min.css">
         
           
           
@@ -68,11 +66,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/view-bigimg.css">
+      <link rel="stylesheet" href="../../../assets/view-bigimg.css">
     
-      <link rel="stylesheet" href="../../assets/extra.css">
+      <link rel="stylesheet" href="../../../assets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -90,9 +88,9 @@
     
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="How to set up your site - Ablog Spell" />
-    <meta property="og:description" content="This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features. - Journal of my learning." />
-    <meta property="og:url" content="https://gypsei.github.io/blog/site-setup/" />
+    <meta property="og:title" content="A Password-proteted private page! - Ablog Spell" />
+    <meta property="og:description" content="To make a page private, we can hide the content to general readers. The content is encrypted, and needs a password to show the original content. This feature is useful but still not totally secured. This post demonstrates how the feature works, its limitations and a soluton for that. Use <code>secret_password</code> to unlock this page. - Journal of my learning." />
+    <meta property="og:url" content="https://gypsei.github.io/blog/site-setup/protected-page/" />
     <meta property="og:image" content="https://gypsei.github.io/assets/banner.jpg" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
@@ -100,8 +98,8 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="How to set up your site - Ablog Spell" />
-    <meta name="twitter:description" content="This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features. - Journal of my learning." />
+    <meta name="twitter:title" content="A Password-proteted private page! - Ablog Spell" />
+    <meta name="twitter:description" content="To make a page private, we can hide the content to general readers. The content is encrypted, and needs a password to show the original content. This feature is useful but still not totally secured. This post demonstrates how the feature works, its limitations and a soluton for that. Use <code>secret_password</code> to unlock this page. - Journal of my learning." />
     <meta name="twitter:image" content="https://gypsei.github.io/assets/banner.jpg" />
 
   </head>
@@ -121,6 +119,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#encryption" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -131,7 +134,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Ablog Spell" class="md-header__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
+    <a href="../../.." title="Ablog Spell" class="md-header__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m414.8 40.79-128 448.01c-4.9 17-22.6 26.8-39.6 22-17-4.9-26.8-22.6-22-39.6l128-447.99c4.9-16.994 22.6-26.834 39.6-21.978 17 4.855 26.8 22.568 22 39.558zm103.8 80.61 112 112c12.5 12.5 12.5 32.7 0 45.2l-112 112c-12.5 12.5-32.7 12.5-45.2 0s-12.5-32.7 0-45.2l89.3-89.4-89.3-89.4c-12.5-12.5-12.5-32.7 0-45.2s32.7-12.5 45.2 0zm-352 45.2L77.25 256l89.35 89.4c12.5 12.5 12.5 32.7 0 45.2s-32.7 12.5-45.2 0L9.372 278.6c-12.496-12.5-12.496-32.7 0-45.2l112.028-112c12.5-12.5 32.7-12.5 45.2 0s12.5 32.7 0 45.2z"/></svg>
@@ -150,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to set up your site
+              A Password-proteted private page!
             
           </span>
         </div>
@@ -219,7 +222,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Diário Code
     </a>
   </li>
@@ -236,7 +239,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         Blog
       </a>
     </li>
@@ -252,7 +255,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../tags/" class="md-tabs__link">
+      <a href="../../../tags/" class="md-tabs__link">
         Tags
       </a>
     </li>
@@ -281,7 +284,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Ablog Spell" class="md-nav__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
+    <a href="../../.." title="Ablog Spell" class="md-nav__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m414.8 40.79-128 448.01c-4.9 17-22.6 26.8-39.6 22-17-4.9-26.8-22.6-22-39.6l128-447.99c4.9-16.994 22.6-26.834 39.6-21.978 17 4.855 26.8 22.568 22 39.558zm103.8 80.61 112 112c12.5 12.5 12.5 32.7 0 45.2l-112 112c-12.5 12.5-32.7 12.5-45.2 0s-12.5-32.7 0-45.2l89.3-89.4-89.3-89.4c-12.5-12.5-12.5-32.7 0-45.2s32.7-12.5 45.2 0zm-352 45.2L77.25 256l89.35 89.4c12.5 12.5 12.5 32.7 0 45.2s-32.7 12.5-45.2 0L9.372 278.6c-12.496-12.5-12.496-32.7 0-45.2l112.028-112c12.5-12.5 32.7-12.5 45.2 0s12.5 32.7 0 45.2z"/></svg>
@@ -300,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Diário Code
       </a>
     </li>
@@ -336,7 +339,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Blog</a>
+          <a href="../../">Blog</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -420,7 +423,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="create-site-project/">Create site project</a>
+          <a href="../create-site-project/">Create site project</a>
           
         </div>
       
@@ -463,7 +466,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="mkdocs-plugins/">Mkdocs plugins</a>
+          <a href="../mkdocs-plugins/">Mkdocs plugins</a>
           
         </div>
       
@@ -506,7 +509,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="markdown-syntax/">Markdown syntax</a>
+          <a href="../markdown-syntax/">Markdown syntax</a>
           
         </div>
       
@@ -549,7 +552,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="handle-missing-page/">Handle missing page</a>
+          <a href="../handle-missing-page/">Handle missing page</a>
           
         </div>
       
@@ -592,7 +595,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="add-new-features/">Add new features</a>
+          <a href="../add-new-features/">Add new features</a>
           
         </div>
       
@@ -635,7 +638,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="print-to-pdf/">Print to PDF</a>
+          <a href="../print-to-pdf/">Print to PDF</a>
           
         </div>
       
@@ -659,12 +662,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_7" type="checkbox" id="__nav_2_2_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_7" type="checkbox" id="__nav_2_2_7" checked>
       
       
       
@@ -677,8 +682,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="protected-page/">Protected page</a>
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Protected page</a>
           
         </div>
       
@@ -736,7 +741,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../tags/">Tags</a>
+          <a href="../../../tags/">Tags</a>
           
         </div>
       
@@ -760,31 +765,9 @@
 
                 
                 
-            </div>
-        </div>
-    </div>
-
-
-
-    
-
-    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-        <div class="md-sidebar__scrollwrap">
-            <div class="md-sidebar__inner">
-                
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                
-
-                
-                
-                    <div class="tag-cloud-toc">
+                    <br>
+                    <br>
+                    <div class="tag-cloud-nav">
                         
 
 
@@ -1012,7 +995,7 @@
                     
                         font-size:0.55rem;
                     
-                    color:DarkBlue;
+                    color:DarkGreen;
                 ">jinja&nbsp;
                 </span>
                 <!--<sup class="tag-count">1</sup>-->
@@ -1028,7 +1011,7 @@
                     
                         font-size:0.6rem;
                     
-                    color:DarkMagenta;
+                    color:DarkOliveGreen;
                 ">javascript&nbsp;
                 </span>
                 <!--<sup class="tag-count">2</sup>-->
@@ -1044,7 +1027,7 @@
                     
                         font-size:0.6rem;
                     
-                    color:DarkCyan;
+                    color:DarkSlateGray;
                 ">mkdocs&nbsp;
                 </span>
                 <!--<sup class="tag-count">2</sup>-->
@@ -1060,7 +1043,7 @@
                     
                         font-size:0.55rem;
                     
-                    color:DarkRed;
+                    color:DarkSlateGray;
                 ">markdown&nbsp;
                 </span>
                 <!--<sup class="tag-count">1</sup>-->
@@ -1101,6 +1084,52 @@
     
 </div>
                     </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+        <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+                
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    Encryption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decrypted-content" class="md-nav__link">
+    Decrypted Content
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                
+
+                
                 
             </div>
         </div>
@@ -1155,18 +1184,43 @@
 
     
     
-        <h1 class="page-title"> How to set up your site </h1>
+        <h1 class="page-title"> [Protected] A Password-proteted private page! </h1>
     
 
     
     
         <p class="page-description">
-            This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features.
+            To make a page private, we can hide the content to general readers. The content is encrypted, and needs a password to show the original content. This feature is useful but still not totally secured. This post demonstrates how the feature works, its limitations and a soluton for that. Use <code>secret_password</code> to unlock this page.
         </p>
     
 
     
-        
+        <div class="page-extra row">
+            <div class="col">
+            
+                <p class="page-tags">
+                    
+                        <a class="tag" href="https://gypsei.github.io/tags/#encryption">
+                            <span class="tag-name">
+                                #encryption &nbsp;
+                            </span>
+                        </a>
+                    
+                </p>
+            
+            
+            </div>
+            <div class="col">
+                <p class="page-date">
+                    <span>
+                    
+                        Last update:
+                        2022-04-23
+                    
+                    </span>
+                </p>
+            </div>
+        </div>
     
 </div>
 
@@ -1219,66 +1273,96 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    Encryption
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decrypted-content" class="md-nav__link">
+    Decrypted Content
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
 </div>
 
 
 
-    <h2>Posts in this section:</h2>
-    <ol>
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/create-site-project/">A Guide to Create a Personal Site</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/mkdocs-plugins/">Additional Features using MkDocs Plugins</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/markdown-syntax/">Syntaxes for Writing Markdown Documents</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/handle-missing-page/">Hanlde Page Not Found (404) error</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/add-new-features/">Add Tags, Recent Post and new Features to my Blog site</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/print-to-pdf/">Print Pages to PDF files</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/protected-page/">A Password-proteted private page!</a>
-                </li>
-            
-        
-    </ol>
+    
+    <div id="mkdocs-encrypted-content" style="display:none">oKAplAyfXaQ6jiCs7Y8jyg==;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;^</div>
+<div id="mkdocs-decrypted-content">
+    <form id="mkdocs-decrypt-form">
+        <h1>This content is protected with AES encryption. </h1>
+        <p>Contact your administrator for access to this page.</p>
+        <input type="password" id="mkdocs-content-password" placeholder="Provide password and press ENTER" />
+        <button id="mkdocs-decrypt-button">Decrypt</button>
+        <p id="mkdocs-decrypt-msg"></p>
+    </form>
+</div>
 
 
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/core.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/enc-base64.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/cipher-core.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/pad-nopadding.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/md5.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/aes.js"></script>
+
+<script type="text/javascript" src="/assets/javascripts/decrypt-contents.js" defer></script>
+
+
+
+    
+    <!-- Get setting from mkdocs.yml, but allow page-level overrides -->
+
+
+
+<!-- Inject Disqus into current page -->
+
+    <h2 id="__comments">Comments</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "https://gypsei.github.io/blog/site-setup/protected-page/"
+            this.page.identifier =
+                "blog/site-setup/protected-page/"
+        }
+
+        /* Set up for the first time */
+        if (typeof DISQUS === "undefined") {
+            var script = document.createElement("script")
+            script.async = true
+            script.src = "https://vuquangtrong-github-io.disqus.com/embed.js"
+            script.setAttribute("data-timestamp", Date.now())
+
+            /* Inject script tag */
+            document.body.appendChild(script)
+
+        /* Set up on navigation (instant loading) */
+        } else {
+            DISQUS.reset({
+                reload: true,
+                config: disqus_config
+            })
+        }
+    </script>
 
 
 
@@ -1298,7 +1382,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Recent posts" rel="prev">
+        <a href="../print-to-pdf/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Print Pages to PDF files" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1307,20 +1391,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Recent posts
+              Print Pages to PDF files
             </div>
           </div>
         </a>
       
       
         
-        <a href="add-new-features/" class="md-footer__link md-footer__link--next" aria-label="Next: Add Tags, Recent Post and new Features to my Blog site" rel="next">
+        <a href="../../../tags/" class="md-footer__link md-footer__link--next" aria-label="Next: Tags" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Add Tags, Recent Post and new Features to my Blog site
+              Tags
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1372,20 +1456,20 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
       
-        <script src="../../assets/mathjax.js"></script>
+        <script src="../../../assets/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../../assets/view-bigimg.js"></script>
+        <script src="../../../assets/view-bigimg.js"></script>
       
-        <script src="../../assets/extra.js"></script>
+        <script src="../../../assets/extra.js"></script>
       
     
   </body>

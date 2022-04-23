@@ -5,10 +5,6 @@
 
 
 
-    
-        
-    
-
 
 
 
@@ -19,7 +15,11 @@
 
 
 
+    
 
+
+
+    
 
 
 
@@ -31,25 +31,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features.">
+        <meta name="description" content="Plugins are used to add new features into the MkDocs engine. Those plugins can change the way you manage and write your documents, or even can change the rendered content. This post showes the pluguns used in this site for reference.">
       
       
         <meta name="author" content="gypsei (gypsei@gmail.com)">
       
       
-        <link rel="canonical" href="https://gypsei.github.io/blog/site-setup/">
+        <link rel="canonical" href="https://gypsei.github.io/blog/site-setup/mkdocs-plugins/">
       
-      <link rel="icon" href="../../favicon.png">
+      <link rel="icon" href="../../../favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
     
     
-    <title>How to set up your site - Ablog Spell</title>
+    <title>Additional Features using MkDocs Plugins - Ablog Spell</title>
 
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.120efc48.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9647289d.min.css">
         
           
           
@@ -68,11 +68,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/view-bigimg.css">
+      <link rel="stylesheet" href="../../../assets/view-bigimg.css">
     
-      <link rel="stylesheet" href="../../assets/extra.css">
+      <link rel="stylesheet" href="../../../assets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -90,19 +90,19 @@
     
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="How to set up your site - Ablog Spell" />
-    <meta property="og:description" content="This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features. - Journal of my learning." />
-    <meta property="og:url" content="https://gypsei.github.io/blog/site-setup/" />
-    <meta property="og:image" content="https://gypsei.github.io/assets/banner.jpg" />
+    <meta property="og:title" content="Additional Features using MkDocs Plugins - Ablog Spell" />
+    <meta property="og:description" content="Plugins are used to add new features into the MkDocs engine. Those plugins can change the way you manage and write your documents, or even can change the rendered content. This post showes the pluguns used in this site for reference. - Journal of my learning." />
+    <meta property="og:url" content="https://gypsei.github.io/blog/site-setup/mkdocs-plugins/" />
+    <meta property="og:image" content="https://gypsei.github.io/blog/site-setup/mkdocs-plugins/plugin.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="How to set up your site - Ablog Spell" />
-    <meta name="twitter:description" content="This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features. - Journal of my learning." />
-    <meta name="twitter:image" content="https://gypsei.github.io/assets/banner.jpg" />
+    <meta name="twitter:title" content="Additional Features using MkDocs Plugins - Ablog Spell" />
+    <meta name="twitter:description" content="Plugins are used to add new features into the MkDocs engine. Those plugins can change the way you manage and write your documents, or even can change the rendered content. This post showes the pluguns used in this site for reference. - Journal of my learning." />
+    <meta name="twitter:image" content="https://gypsei.github.io/blog/site-setup/mkdocs-plugins/plugin.png" />
 
   </head>
   
@@ -121,6 +121,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#awesome-pages" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -131,7 +136,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Ablog Spell" class="md-header__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
+    <a href="../../.." title="Ablog Spell" class="md-header__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m414.8 40.79-128 448.01c-4.9 17-22.6 26.8-39.6 22-17-4.9-26.8-22.6-22-39.6l128-447.99c4.9-16.994 22.6-26.834 39.6-21.978 17 4.855 26.8 22.568 22 39.558zm103.8 80.61 112 112c12.5 12.5 12.5 32.7 0 45.2l-112 112c-12.5 12.5-32.7 12.5-45.2 0s-12.5-32.7 0-45.2l89.3-89.4-89.3-89.4c-12.5-12.5-12.5-32.7 0-45.2s32.7-12.5 45.2 0zm-352 45.2L77.25 256l89.35 89.4c12.5 12.5 12.5 32.7 0 45.2s-32.7 12.5-45.2 0L9.372 278.6c-12.496-12.5-12.496-32.7 0-45.2l112.028-112c12.5-12.5 32.7-12.5 45.2 0s12.5 32.7 0 45.2z"/></svg>
@@ -150,7 +155,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to set up your site
+              Additional Features using MkDocs Plugins
             
           </span>
         </div>
@@ -219,7 +224,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Diário Code
     </a>
   </li>
@@ -236,7 +241,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         Blog
       </a>
     </li>
@@ -252,7 +257,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../tags/" class="md-tabs__link">
+      <a href="../../../tags/" class="md-tabs__link">
         Tags
       </a>
     </li>
@@ -281,7 +286,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Ablog Spell" class="md-nav__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
+    <a href="../../.." title="Ablog Spell" class="md-nav__button md-logo" aria-label="Ablog Spell" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m414.8 40.79-128 448.01c-4.9 17-22.6 26.8-39.6 22-17-4.9-26.8-22.6-22-39.6l128-447.99c4.9-16.994 22.6-26.834 39.6-21.978 17 4.855 26.8 22.568 22 39.558zm103.8 80.61 112 112c12.5 12.5 12.5 32.7 0 45.2l-112 112c-12.5 12.5-32.7 12.5-45.2 0s-12.5-32.7 0-45.2l89.3-89.4-89.3-89.4c-12.5-12.5-12.5-32.7 0-45.2s32.7-12.5 45.2 0zm-352 45.2L77.25 256l89.35 89.4c12.5 12.5 12.5 32.7 0 45.2s-32.7 12.5-45.2 0L9.372 278.6c-12.496-12.5-12.496-32.7 0-45.2l112.028-112c12.5-12.5 32.7-12.5 45.2 0s12.5 32.7 0 45.2z"/></svg>
@@ -300,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Diário Code
       </a>
     </li>
@@ -336,7 +341,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Blog</a>
+          <a href="../../">Blog</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -420,7 +425,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="create-site-project/">Create site project</a>
+          <a href="../create-site-project/">Create site project</a>
           
         </div>
       
@@ -444,12 +449,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" type="checkbox" id="__nav_2_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2_2" type="checkbox" id="__nav_2_2_2" checked>
       
       
       
@@ -462,8 +469,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="mkdocs-plugins/">Mkdocs plugins</a>
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Mkdocs plugins</a>
           
         </div>
       
@@ -506,7 +513,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="markdown-syntax/">Markdown syntax</a>
+          <a href="../markdown-syntax/">Markdown syntax</a>
           
         </div>
       
@@ -549,7 +556,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="handle-missing-page/">Handle missing page</a>
+          <a href="../handle-missing-page/">Handle missing page</a>
           
         </div>
       
@@ -592,7 +599,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="add-new-features/">Add new features</a>
+          <a href="../add-new-features/">Add new features</a>
           
         </div>
       
@@ -635,7 +642,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="print-to-pdf/">Print to PDF</a>
+          <a href="../print-to-pdf/">Print to PDF</a>
           
         </div>
       
@@ -678,7 +685,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="protected-page/">Protected page</a>
+          <a href="../protected-page/">Protected page</a>
           
         </div>
       
@@ -736,7 +743,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../tags/">Tags</a>
+          <a href="../../../tags/">Tags</a>
           
         </div>
       
@@ -760,31 +767,9 @@
 
                 
                 
-            </div>
-        </div>
-    </div>
-
-
-
-    
-
-    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-        <div class="md-sidebar__scrollwrap">
-            <div class="md-sidebar__inner">
-                
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                
-
-                
-                
-                    <div class="tag-cloud-toc">
+                    <br>
+                    <br>
+                    <div class="tag-cloud-nav">
                         
 
 
@@ -1012,7 +997,7 @@
                     
                         font-size:0.55rem;
                     
-                    color:DarkBlue;
+                    color:DarkSlateGray;
                 ">jinja&nbsp;
                 </span>
                 <!--<sup class="tag-count">1</sup>-->
@@ -1044,7 +1029,7 @@
                     
                         font-size:0.6rem;
                     
-                    color:DarkCyan;
+                    color:DarkSlateGray;
                 ">mkdocs&nbsp;
                 </span>
                 <!--<sup class="tag-count">2</sup>-->
@@ -1060,7 +1045,7 @@
                     
                         font-size:0.55rem;
                     
-                    color:DarkRed;
+                    color:DarkBlue;
                 ">markdown&nbsp;
                 </span>
                 <!--<sup class="tag-count">1</sup>-->
@@ -1092,7 +1077,7 @@
                     
                         font-size:0.55rem;
                     
-                    color:DarkSlateGray;
+                    color:DarkGreen;
                 ">encryption&nbsp;
                 </span>
                 <!--<sup class="tag-count">1</sup>-->
@@ -1101,6 +1086,87 @@
     
 </div>
                     </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+        <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+                
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#awesome-pages" class="md-nav__link">
+    Awesome Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-index" class="md-nav__link">
+    Section index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revision-date" class="md-nav__link">
+    Revision date
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-to-pdf" class="md-nav__link">
+    Print to PDF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    Macros
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawio-exporter" class="md-nav__link">
+    DrawIO Exporter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid" class="md-nav__link">
+    Mermaid
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                
+
+                
                 
             </div>
         </div>
@@ -1155,18 +1221,43 @@
 
     
     
-        <h1 class="page-title"> How to set up your site </h1>
+        <h1 class="page-title"> Additional Features using MkDocs Plugins </h1>
     
 
     
     
         <p class="page-description">
-            This post shows the method by which I did create this blog site. It's is not easy but also not difficult to bring up a site. The interesting thing is I have to do some code to change the appearance and to add some new features.
+            Plugins are used to add new features into the MkDocs engine. Those plugins can change the way you manage and write your documents, or even can change the rendered content. This post showes the pluguns used in this site for reference.
         </p>
     
 
     
-        
+        <div class="page-extra row">
+            <div class="col">
+            
+                <p class="page-tags">
+                    
+                        <a class="tag" href="https://gypsei.github.io/tags/#mkdocs">
+                            <span class="tag-name">
+                                #mkdocs &nbsp;
+                            </span>
+                        </a>
+                    
+                </p>
+            
+            
+            </div>
+            <div class="col">
+                <p class="page-date">
+                    <span>
+                    
+                        Last update:
+                        2022-04-23
+                    
+                    </span>
+                </p>
+            </div>
+        </div>
     
 </div>
 
@@ -1219,66 +1310,292 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#awesome-pages" class="md-nav__link">
+    Awesome Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-index" class="md-nav__link">
+    Section index
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revision-date" class="md-nav__link">
+    Revision date
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#print-to-pdf" class="md-nav__link">
+    Print to PDF
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    Macros
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawio-exporter" class="md-nav__link">
+    DrawIO Exporter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid" class="md-nav__link">
+    Mermaid
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
 </div>
 
 
 
-    <h2>Posts in this section:</h2>
-    <ol>
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/create-site-project/">A Guide to Create a Personal Site</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/mkdocs-plugins/">Additional Features using MkDocs Plugins</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/markdown-syntax/">Syntaxes for Writing Markdown Documents</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/handle-missing-page/">Hanlde Page Not Found (404) error</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/add-new-features/">Add Tags, Recent Post and new Features to my Blog site</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/print-to-pdf/">Print Pages to PDF files</a>
-                </li>
-            
-        
-            
-                
-                <li>
-                    <a href="https://gypsei.github.io/blog/site-setup/protected-page/">A Password-proteted private page!</a>
-                </li>
-            
-        
-    </ol>
+    
+    <p>Places to get MkDocs Plugins: <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins">Official List</a>, <a href="https://www.wheelodex.org/entry-points/mkdocs.plugins/">Wheelodex</a>, and <a href="https://github.com/search?l=Python&amp;o=desc&amp;q=%22from+mkdocs.plugins+import%22&amp;s=indexed&amp;type=Code">GitHub</a>.</p>
+<h2 id="awesome-pages">Awesome Pages<a class="headerlink" href="#awesome-pages" title="Permanent link">#</a></h2>
+<p><a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">MkDocs Awesome Pages plugin</a> simplifies configuring page titles and their entries order.</p>
+<p>Install the plugin:</p>
+<div class="highlight"><pre><span></span><code>pip install -U mkdocs-awesome-pages-plugin
+</code></pre></div>
+<p>Enable it in the config file <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"> </span><span class="c1"># built-in search must be always activated</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">awesome-pages</span><span class="w"></span>
+</code></pre></div>
+<p>Create a YAML file named <code>.pages</code> in a directory and use a local <code>nav</code> attribute to customize the navigation in each folder with some more extra configurations:</p>
+<ol>
+<li>
+<p>A 3-dots <code>...</code> entry is used to specify where all remaining items should be inserted. It can filter the remaining items using glob patterns or regular expressions. For example:</p>
+<div class="admonition attention">
+<p class="admonition-title"> </p>
+<p>The pattern is checked against the <em>basename</em> of remaining items - not their whole path, so it can be used to filter files in sub-folders.</p>
+</div>
+</li>
+<li>
+<p>Hide directory by setting the <code>hide</code> attribute to <code>true</code>.</p>
+</li>
+<li>
+<p>Optionally set the directory title using the <code>title</code> attribute.
+    Optionally specify a title for the navigation entry before its document path. For example:</p>
+</li>
+<li>
+<p>Collapse single nested pages by setting <code>collapse_single_pages</code> attribute to <code>true</code>.</p>
+</li>
+</ol>
+<p><em>Example:</em></p>
+<div class="highlight"><span class="filename">.pages</span><pre><span></span><code><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">New section</span><span class="w"></span>
+<span class="nt">nav</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">... | introduction-*.md</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">...</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">summary.md</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">First page</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">page1.md</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Link Title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com</span><span class="w"></span>
+<span class="nt">hide</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+<span class="nt">collapse_single_pages</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
+</code></pre></div>
+<p>
+<figure><img src="nav_collapse_single_pages.png" /><figcaption>Using Awesome Pages plugin with <code>collapse_single_pages</code> enabled,<br> before and after applying</figcaption>
+</figure>
+</p>
+<h2 id="section-index">Section index<a class="headerlink" href="#section-index" title="Permanent link">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title"> </p>
+<p>This plugin is no longer used in this site! The feature <code>navigation.indexes</code> comes with Material theme already does the work of this plugin.</p>
+</div>
+<p>In MkDocs, each directory will become a section, and by default, section only contains its children pages. There is no page associated to a section. <a href="https://pypi.org/project/mkdocs-section-index/">MkDocs Section Index</a> is a plugin that attaches the first child page, usually an index page, to the section link.</p>
+<p>Install the plugin:</p>
+<div class="highlight"><pre><span></span><code>pip install -U mkdocs-section-index
+</code></pre></div>
+<p>Enable it in the config file <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"> </span><span class="c1"># built-in search must be always activated</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">awesome-pages</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">section-index</span><span class="w"> </span><span class="c1"># must be after awesome-pages # (1)</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>Note that the feature <code>navigation.indexes</code> comes with Material theme already to the work of this plugin.</li>
+</ol>
+<p>The merged section page shows the section’s title from the <em>directory name</em>, not the attached page’s title.</p>
+<p>
+<figure><img src="nav_section_index.png" /><figcaption>Using the Section Index plugin, before and after applying</figcaption>
+</figure>
+</p>
+<h2 id="revision-date">Revision date<a class="headerlink" href="#revision-date" title="Permanent link">#</a></h2>
+<p>To keep tracking the last modified date of a post, <a href="https://github.com/zhaoterryy/mkdocs-git-revision-date-plugin">git-revision-date</a> plugin can be used. A better alternative plugin is <a href="https://pypi.org/project/mkdocs-git-revision-date-localized-plugin/">git-revision-date-localized</a> which provides more types of date format (e.g. in time-ago format), and the creation date.</p>
+<p>Install the plugin:</p>
+<div class="highlight"><pre><span></span><code>pip install -U mkdocs-git-revision-date-localized-plugin
+</code></pre></div>
+<p>Enable it in the config file:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"> </span><span class="c1"># built-in search must be always activated</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">enable_creation_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">          </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">iso_date</span><span class="w"></span>
+</code></pre></div>
+<p>This plugin creates new field in the post&rsquo;s meta-data which content the creation and update date. This information is used to sort the posts by revision date to get recently updated items, as shown in the <a href="../add-new-features/#the-recent-blog-posts">Recent blog posts</a> page.</p>
+<h2 id="print-to-pdf">Print to PDF<a class="headerlink" href="#print-to-pdf" title="Permanent link">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title"> </p>
+<p>Enabling this plugin causes very long build time when you have lot of posts!</p>
+</div>
+<p>To export the posts on this blog, there are some plugins which can do it. However, most of them depend on <a href="http://weasyprint.org/">Weasy Print</a> which in turn depends on many other packages. There is one plugin that prints in an easy and simple way: use browser to print page by sending print command (like press <code>Ctrl + S</code>).</p>
+<p>More detail of installation and configuration the <a href="https://github.com/vuquangtrong/mkdocs-pdf-with-js-plugin">MkDocs PDF with JS</a> plugin for printing to PDF can be read in <a href="../print-to-pdf/">Print to PDF</a>.</p>
+<h2 id="macros">Macros<a class="headerlink" href="#macros" title="Permanent link">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title"> </p>
+<p>This plugin is no longer used in this site!</p>
+</div>
+<p><a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/">MkDocs Macros</a> is a plugin/ framework that makes it easy to produce richer and more beautiful pages. It can do two things:</p>
+<ol>
+<li>
+<p>Transform the markdown pages into a <a href="https://jinja.palletsprojects.com">Jinja2 templates</a> that can use variables, macros and filters.</p>
+</li>
+<li>
+<p>Replace MkDocs plugins for a wide range of tasks: e.g. manipulating the navigation, adding files after the HTML pages have already been generated etc.</p>
+</li>
+</ol>
+<p>Install the plugin:</p>
+<div class="highlight"><pre><span></span><code>pip install -U mkdocs-macros-plugin
+</code></pre></div>
+<p>Enable it in the config file:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"> </span><span class="c1"># built-in search must be always activated</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">macros</span><span class="w"></span>
+</code></pre></div>
+<div class="admonition bug">
+<p class="admonition-title">Incomplete data in macro</p>
+<p>The macro <code class="highlight"><span class="cp">{{</span><span class="nv">navigation.pages</span><span class="cp">}}</span><span class="x"></span></code> contains a list of all pages, but the data of each page maybe not complete, such as <em>title</em> or <em>meta-data</em>.</p>
+<p>This issue happens when rendering a the content of the first page, but it needs to know the content of the second page which has not been parsed already as it is waiting for the first page getting done.</p>
+</div>
+<h2 id="drawio-exporter">DrawIO Exporter<a class="headerlink" href="#drawio-exporter" title="Permanent link">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title"> </p>
+<p>This plugin is no longer used in this site!</p>
+</div>
+<p><a href="https://github.com/LukeCarrier/mkdocs-drawio-exporter">DrawIO Exporter</a> is a great plugin that exports the <code>.drawio</code> diagrams to images at build time and insert them to the document. This plugin can replace the <a href="https://github.com/fralau/mkdocs-mermaid2-plugin">Mermaid</a> plugin, and it is faster thanks to no JavaScript needed at runtime. It also helps to enable instant navigation mode of the Material theme.</p>
+<p>Install the plugin:</p>
+<div class="highlight"><pre><span></span><code>pip install -U mkdocs-drawio-exporter
+</code></pre></div>
+<p>Enable it in the config file:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"> </span><span class="c1"># built-in search must be always activated</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">drawio-exporter</span><span class="w"></span>
+</code></pre></div>
+<p>To create end edit <code>.drawio</code> diagram, download and install the <a href="https://www.diagrams.net">diagrams.net</a> application.</p>
+<p>To import a diagram, just use the syntax for inserting an image:</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">My alt text</span>](<span class="na">my-diagram.drawio</span>)
+</code></pre></div>
+<p>The plugin will generate an SVG image to a cache folder (default in <code>docs\drawio-exporter</code>), and then modify the image&rsquo;s source to point to the generated image.</p>
+<p>If the diagram is a multipage document, append the index of the page as an anchor in the image&rsquo;s URL to select the target page:</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">Page 1</span>](<span class="na">my-diagram.drawio#0</span>)
+</code></pre></div>
+<p>
+<figure><img src="example.drawio.svg" /><figcaption>A draw.io diagram</figcaption>
+</figure>
+</p>
+<div class="admonition info">
+<p class="admonition-title">Alternative method</p>
+<p>Using <a href="../create-site-project/#visual-studio-code">Draw.io Integration</a> extension in Visual Studio Code, I can save a DrawIO diagram as a <code>.drawio.svg</code> file, then use that file directly in the page as an usual image. However this method will not support multiple pages in the drawing:</p>
+<div class="highlight"><pre><span></span><code>![<span class="nt">My alt text</span>](<span class="na">my-diagram.drawio.svg</span>)   // work
+![<span class="nt">My alt text</span>](<span class="na">my-diagram.drawio.svg#1</span>) // does not work
+</code></pre></div>
+</div>
+<h2 id="mermaid">Mermaid<a class="headerlink" href="#mermaid" title="Permanent link">#</a></h2>
+<div class="admonition attention">
+<p class="admonition-title"> </p>
+<p>This plugin is no longer used in this site!</p>
+</div>
+<p><a href="https://github.com/fralau/mkdocs-mermaid2-plugin">MkDocs Mermaid2</a> is a plugin to render textual graph description into <a href="https://mermaid-js.github.io/mermaid">Mermaid</a> graphs (flow charts, sequence diagrams, pie charts, etc.).</p>
+<p>Install the plugin:</p>
+<div class="highlight"><pre><span></span><code>pip install -U mkdocs-mermaid2-plugin
+</code></pre></div>
+<p>Enable it in the config file:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">search</span><span class="w"> </span><span class="c1"># built-in search must be always activated</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mermaid2</span><span class="w"></span>
+</code></pre></div>
+<p>And configure the code block parser for mermaid2 blocks:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.superfences</span><span class="p">:</span><span class="w"></span>
+<span class="w">          </span><span class="nt">custom_fences</span><span class="p">:</span><span class="w"></span>
+<span class="w">              </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mermaid</span><span class="w"></span>
+<span class="w">                </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mermaid</span><span class="w"></span>
+<span class="w">                </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="kt">!!python/name:mermaid2.fence_mermaid</span><span class="w"></span>
+</code></pre></div>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>``` mermaid
+graph LR
+  A[Start] --&gt; B{Error?};
+  B --&gt;|Yes| C[Hmm...];
+  C --&gt; D[Debug];
+  D --&gt; B;
+  B ----&gt;|No| E[Yay!];
+```
+</code></pre></div>
+<p>will render as:</p>
+<p>
+<figure><img src="example.mermaid.svg" /><figcaption>A diagram generated by Mermaid</figcaption>
+</figure>
+</p>
 
 
+
+    
+    <!-- Get setting from mkdocs.yml, but allow page-level overrides -->
+
+
+
+<!-- Inject Disqus into current page -->
+
+    <h2 id="__comments">Comments</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "https://gypsei.github.io/blog/site-setup/mkdocs-plugins/"
+            this.page.identifier =
+                "blog/site-setup/mkdocs-plugins/"
+        }
+
+        /* Set up for the first time */
+        if (typeof DISQUS === "undefined") {
+            var script = document.createElement("script")
+            script.async = true
+            script.src = "https://vuquangtrong-github-io.disqus.com/embed.js"
+            script.setAttribute("data-timestamp", Date.now())
+
+            /* Inject script tag */
+            document.body.appendChild(script)
+
+        /* Set up on navigation (instant loading) */
+        } else {
+            DISQUS.reset({
+                reload: true,
+                config: disqus_config
+            })
+        }
+    </script>
 
 
 
@@ -1298,7 +1615,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Recent posts" rel="prev">
+        <a href="../create-site-project/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A Guide to Create a Personal Site" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1307,20 +1624,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Recent posts
+              A Guide to Create a Personal Site
             </div>
           </div>
         </a>
       
       
         
-        <a href="add-new-features/" class="md-footer__link md-footer__link--next" aria-label="Next: Add Tags, Recent Post and new Features to my Blog site" rel="next">
+        <a href="../markdown-syntax/" class="md-footer__link md-footer__link--next" aria-label="Next: Syntaxes for Writing Markdown Documents" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Add Tags, Recent Post and new Features to my Blog site
+              Syntaxes for Writing Markdown Documents
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1372,20 +1689,20 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
       
-        <script src="../../assets/mathjax.js"></script>
+        <script src="../../../assets/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
-        <script src="../../assets/view-bigimg.js"></script>
+        <script src="../../../assets/view-bigimg.js"></script>
       
-        <script src="../../assets/extra.js"></script>
+        <script src="../../../assets/extra.js"></script>
       
     
   </body>
